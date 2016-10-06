@@ -11,7 +11,10 @@ Contents:
 ^^^^^^^^
 .. toctree::
    :maxdepth: 2
-   
+
+   Introduction
+   Velodyne VLP-16
+   Hokuyo LiDAR URG-04-LX-UG01
    license
    help
 
