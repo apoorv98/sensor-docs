@@ -109,7 +109,7 @@ At this point try the command below again
 
 .. code-block:: bash
 
-        cmake --DENABLE_veloview:BOOL=ON ../Superbuild
+        cmake -DENABLE_veloview:BOOL=ON ../Superbuild
 ..		
 
 Other possible reason for failure would be your system has both Qt4 and Qt5
