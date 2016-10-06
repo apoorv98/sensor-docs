@@ -30,7 +30,7 @@ Open the terminal and change the directory where you want to install the softwar
 
 **Note:** This assumes git is already installed on the system, if not use `$ sudo apt-get install git` command before following the next steps.
 
-.. code-block:: ruby
+.. code-block:: bash
 
       $ git clone git://public.kitware.com/VeloView.git
 ..   
@@ -39,7 +39,7 @@ Open the terminal and change the directory where you want to install the softwar
 
 a. First we need to install all the dependencies if they are already not installed. Follow the instructions below to set it up on your system:
 
-.. code-block:: ruby
+.. code-block:: bash
 
         $ sudo apt-get install cmake-curses-gui
         $ sudo apt-get install build-essential
@@ -56,7 +56,7 @@ b. Next, we need to check the installed version of cmake. To do this use cmake -
 
 If this is not the case after running cmake –version, follow the next step, others can skip the following commands and read further.
 
-.. code-block:: ruby
+.. code-block:: bash 
 
         $ sudo apt-get install software-properties-common
         $ sudo add-apt-repository ppa:george-edison55/cmake-3.x
@@ -66,14 +66,14 @@ If this is not the case after running cmake –version, follow the next step, ot
 
 c. On Linux, libpcap can either be installed as a package or built from source. If you want to build from source, you would additionally need to install flex and byacc. This guide uses the package version.
 
-.. code-block:: ruby
+.. code-block:: bash
 
         $ sudo apt-get install libpcap-dev
 ..			
 
 d. Now go back to the directory where you cloned the git repository for VeloView if already not there, then execute:
 
-.. code-block:: ruby
+.. code-block:: bash
 
         $ mkdir build
         $ cd build
@@ -85,14 +85,14 @@ This may not succeed, and might fail with an error as shown in figure below:
 In this case change back to VeloView directory and execute the following com-
 mands:
 
-.. code-block:: ruby
+.. code-block:: bash 
 
         ccmake Superbuild
 ..			
 
 This will open CMake configuration file in the terminal. Enable the options shown below by navigating to the option and pressing the Enter key.
 
-.. code-block:: ruby
+.. code-block:: bash
 
         ENABLE_veloview=ON
         USE_SYSTEM_boost=ON
@@ -107,7 +107,7 @@ and exit.
 
 At this point try the command below again
 
-.. code-block:: ruby
+.. code-block:: bash
 
         cmake --DENABLE_veloview:BOOL=ON ../Superbuild
 ..		
@@ -116,7 +116,7 @@ Other possible reason for failure would be your system has both Qt4 and Qt5
 installed, in which case you need to choose Qt4 before building. To do that, run
 the following in the bash:
 
-.. code-block:: ruby
+.. code-block:: bash
 
         $ export Qt_SELECT=qt14
 ..
