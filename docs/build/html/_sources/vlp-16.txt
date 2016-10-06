@@ -1,4 +1,4 @@
-Velodyne VLP - 17
+Velodyne VLP - 16
 =================
 
 Introduction
@@ -37,7 +37,7 @@ Open the terminal and change the directory where you want to install the softwar
 
 **2. Configuring and building**
 
-    a. First we need to install all the dependencies if they are already not installed. Follow the instructions below to set it up on your system:
+a. First we need to install all the dependencies if they are already not installed. Follow the instructions below to set it up on your system:
 
 .. code-block:: ruby
 
@@ -52,7 +52,7 @@ Open the terminal and change the directory where you want to install the softwar
         $ sudo apt-get install zlib1g-dev
 ..		
        
-    b. Next, we need to check the installed version of cmake. To do this use cmake --version in the terminal. Note that CMake >= 3.2 is sufficient to build VeloView.
+b. Next, we need to check the installed version of cmake. To do this use cmake --version in the terminal. Note that CMake >= 3.2 is sufficient to build VeloView.
 
 If this is not the case after running cmake –version, follow the next step, others can skip the following commands and read further.
 
@@ -64,20 +64,20 @@ If this is not the case after running cmake –version, follow the next step, ot
         $ sudo apt-get install --reinstall cmake
 ..			
 
-    c. On Linux, libpcap can either be installed as a package or built from source. If you want to build from source, you would additionally need to install flex and byacc. This guide uses the package version.
+c. On Linux, libpcap can either be installed as a package or built from source. If you want to build from source, you would additionally need to install flex and byacc. This guide uses the package version.
 
 .. code-block:: ruby
 
         $ sudo apt-get install libpcap-dev
-..
+..			
 
-    d. Now go back to the directory where you cloned the git repository for VeloView if already not there, then execute:
+d. Now go back to the directory where you cloned the git repository for VeloView if already not there, then execute:
 
 .. code-block:: ruby
 
         $ mkdir build
         $ cd build
-        $ cmake --DENABLE_veloview:BOOL=ON ../Superbuild
+        $ cmake -DENABLE_veloview:BOOL=ON ../Superbuild
 ..		
 
 This may not succeed, and might fail with an error as shown in figure below:
