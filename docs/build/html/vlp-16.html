@@ -150,6 +150,7 @@ imaging system where LiDAR is used.</p>
 <li>Rotational speed of 5-20 rotations per second (adjustable)</li>
 <li>Returns of up to 100m (useful range depends on application).</li>
 </ol>
+<a class="reference internal image-reference" href="_images/vlp-16_setup.png"><img alt="Overview of the LiDAR VLP-16 3D Imaging System" src="_images/vlp-16_setup.png" style="width: 1067.0px; height: 390.0px;" /></a>
 </div>
 <div class="section" id="software-installation">
 <h2>Software Installation<a class="headerlink" href="#software-installation" title="Permalink to this headline">¶</a></h2>
@@ -202,6 +203,7 @@ $ cmake -DENABLE_veloview:BOOL<span class="o">=</span>ON ../Superbuild
 </pre></div>
 </div>
 <p>This may not succeed, and might fail with an error as shown in figure below:</p>
+<img alt="Failure while compiling" src="_images/failed_config.png" />
 <p>In this case change back to VeloView directory and execute the following com-
 mands:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span></span>ccmake Superbuild
@@ -229,8 +231,10 @@ the following in the bash:</p>
 </div>
 <p>Now you should see the message Configuring done and Build files have been
 written to build directory as shown in the screeenshot in Figure 3.</p>
+<img alt="Successful compilation" src="_images/build_success.png" />
 <p>Figure 4 shows VeloView software running the sample data downloaded from
 [2] Sample data for the VeloView application.</p>
+<img alt="VeloView application running with sample data" src="_images/velo_sample.png" />
 </div>
 </div>
 

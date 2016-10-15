@@ -16,6 +16,10 @@ imaging system where LiDAR is used.
 3. Rotational speed of 5-20 rotations per second (adjustable) 
 4. Returns of up to 100m (useful range depends on application).
 
+.. image:: vlp-16_setup.png
+        :scale: 100%
+        :alt: Overview of the LiDAR VLP-16 3D Imaging System
+
 Software Installation
 ---------------------
 
@@ -82,6 +86,9 @@ d. Now go back to the directory where you cloned the git repository for VeloView
 
 This may not succeed, and might fail with an error as shown in figure below:
 
+.. image:: failed_config.png
+        :alt: Failure while compiling
+
 In this case change back to VeloView directory and execute the following com-
 mands:
 
@@ -124,5 +131,12 @@ the following in the bash:
 Now you should see the message Configuring done and Build files have been
 written to build directory as shown in the screeenshot in Figure 3.
 
+.. image:: build_success.png
+        :alt: Successful compilation
+
+
 Figure 4 shows VeloView software running the sample data downloaded from
 [2] Sample data for the VeloView application.
+
+.. image:: velo_sample.png
+        :alt: VeloView application running with sample data
